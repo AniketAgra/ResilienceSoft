@@ -1,0 +1,79 @@
+ .btnCont {
+	height: 40px;
+	text-align: center;
+}
+.btnAni {
+	outline: none !important;
+	height: 40px;
+	text-align: center;
+	width: 200px;
+	border-radius: 40px;
+	background: #fff;
+	border: 2px solid #1565c0;
+	color: #1565c0;
+	letter-spacing: 1px;
+	text-shadow: 0;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+ .btnAni[disabled=disabled] , .btnAni:disabled {
+     background: #689db6;
+     color: #fff;
+     border:2px solid #689db6;
+ }
+.btnAni:hover:enabled {
+	color: white;
+	background: #1565c0;
+}
+ 
+
+.btnAni:active {
+	letter-spacing: 2px;
+}
+
+.btnAni:after {
+	content: "Login";
+}
+ 
+.onclic {
+	width: 40px;
+	border-color: #bbb;
+	border-width: 3px;
+	font-size: 0;
+	border-left-color: #1565c0;
+	animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclic:after {
+	content: "";
+}
+ 
+.onclic:hover {
+	color: #1565c0;
+	background: white;
+}
+
+.validateBtn {
+	font-size: 22px;
+	color: white;
+	background: #1565c0;
+}
+
+.validateBtn:after {
+	font-family: 'FontAwesome';
+	content: "\f00c";
+}
+ 
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+
+}
+ 

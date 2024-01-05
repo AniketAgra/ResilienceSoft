@@ -1,0 +1,337 @@
+
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:06:33 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 101
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"101"}}
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:06:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:06:35 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:06:55 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 101
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"101"}}
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:06:55 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:06:56 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:07:31 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 101
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"101"}}
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:07:31 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:07:32 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:09:01 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 97
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"97"}}
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:09:01 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:09:02 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:09:05 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 97
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://apitest.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"97"}}
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:09:05 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:09:06 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00007","text":"User authentication failed due to invalid authentication values."}]}}
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:11:15 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 97
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"97"}}
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:11:15 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:11:17 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:11:35 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 101
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"101"}}
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:11:35 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:11:36 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:11:38 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 101
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"101"}}
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:11:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:11:40 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:12:33 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 105
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"105"}}
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:12:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:12:34 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:15:38 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 105
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"105"}}
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:15:38 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:15:39 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:39:29 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 96
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"96"}}
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:39:29 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:39:30 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 114) - Request Creation Begin
+ Mon, 31 Oct 2022 15:39:32 +0530 DEBUG : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 115) - net\authorize\api\contract\v1\GetTransactionDetailsRequest Object
+(
+    [transId:net\authorize\api\contract\v1\GetTransactionDetailsRequest:private] => 96
+    [merchantAuthentication:net\authorize\api\contract\v1\ANetApiRequestType:private] => net\authorize\api\contract\v1\MerchantAuthenticationType Object
+        (
+            [name:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 88WTrxLg8v5h
+            [transactionKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => xxxx
+            [sessionToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [password:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [impersonationAuthentication:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [fingerPrint:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [clientKey:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [accessToken:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+            [mobileDeviceId:net\authorize\api\contract\v1\MerchantAuthenticationType:private] => 
+        )
+
+    [clientId:net\authorize\api\contract\v1\ANetApiRequestType:private] => sdk-php-2.0.0
+    [refId:net\authorize\api\contract\v1\ANetApiRequestType:private] => 
+)
+
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [execute] (/home/gsm2go/public_html/vendor/lib/net/authorize/api/controller/base/ApiOperationBase.php : 126) - Request  Creation End
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 75) -  Url: https://api2.authorize.net/xml/v1/request.api
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 77) - Request to AnetApi: 
+{"getTransactionDetailsRequest":{"merchantAuthentication":{"name":"88WTrxLg8v5h","transactionKey":"928r46JgzuHAgq6k"},"clientId":"sdk-php-2.0.0","transId":"96"}}
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 89) - Sending 'XML' Request type
+ Mon, 31 Oct 2022 15:39:32 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 94) - Sending http request via Curl
+ Mon, 31 Oct 2022 15:39:33 +0530 INFO : [_sendRequest] (/home/gsm2go/public_html/vendor/lib/net/authorize/util/HttpClient.php : 96) - Response from AnetApi: ﻿{"messages":{"resultCode":"Error","message":[{"code":"E00040","text":"The record cannot be found."}]}}

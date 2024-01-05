@@ -1,0 +1,228 @@
+(function ($) {
+    $(document).on("click", ".add-cart button", function (e) {
+        //e.preventDefault();
+
+        var $thisbutton = $(this),
+            $form = $thisbutton.closest("form.cart"),
+            id = $thisbutton.val(),
+            product_qty = $form.find("input[name=quantity]").val() || 1,
+            product_id = $form.find("input[name=product_id]").val() || id,
+            variation_id = $form.find("input[name=variation_id]").val() || 0;
+
+        var data = {
+            action: "woocommerce_ajax_add_to_cart",
+            product_id: product_id,
+            product_sku: "",
+            quantity: product_qty,
+            variation_id: variation_id,
+        };
+
+        $(document.body).trigger("adding_to_cart", [$thisbutton, data]);
+
+        $.ajax({
+            type: "post",
+            url: wc_add_to_cart_params.ajax_url,
+            data: data,
+            beforeSend: function (response) {
+                $thisbutton.removeClass("added").addClass("loading");
+            },
+            complete: function (response) {
+                $thisbutton.addClass("added").removeClass("loading");
+                $(".carrito-img").click();
+                $(window).trigger("resize");
+            },
+            success: function (response) {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                if (response.error && response.product_url) {
+                    window.location = response.product_url;
+                    return;
+                } else {
+                    document.getElementById("mini_carrito").style.display = "none";
+                    document.getElementById("shopping-cart__continue-btn_bottom").style.display = "block";
+                    document.getElementById("checkoutButton") && (document.getElementById("checkoutButton").style.display = "block"); //Elimina el carrito vacio al agregar producto
+                    $(document.body).trigger("added_to_cart", [
+                        response.fragments,
+                        response.cart_hash,
+                        $thisbutton,
+                    ]);
+                }
+            },
+        });
+
+        return false;
+    });
+
+    $(document).on("click", ".close-megamenu", function (e) {
+        //e.preventDefault();
+        $(".wp-megamenu-sub-menu").removeClass("wp-megamenu-sub-menu-open");
+    });
+
+    $(document).on("mouseover", ".li-megamenu", function (e) {
+        if (window.innerWidth > 768) {
+            $(".megamenu").toggleClass("hidden");
+        }
+        //e.preventDefault();
+    });
+
+    var megamenu = $(".megamenu");
+    var liMegamenu = $(".li-megamenu");
+
+    $(document).click(function (e) {
+        // if the target of the click isn't the megamenu nor a descendant of the megamenu
+        if (
+            !megamenu.is(e.target) &&
+            !liMegamenu.is(e.target) &&
+            liMegamenu.has(e.target).length === 0 &&
+            megamenu.has(e.target).length === 0
+        ) {
+            megamenu.addClass("hidden");
+        }
+    });
+
+    // Simula click en primer elemento que vea
+    $(document).on("click", ".product-variation label", function (e) {
+        if(!$(this).hasClass('init')){
+            const span = $(this).siblings('span');
+            const ins = span.find('ins');
+            const precio = ins.find('bdi').html();
+            $('.product__prices .price').html(precio);
+        }else{
+            $('.variations .product-variation label').removeClass('init');
+        }
+    });
+})(jQuery);
+
+/*Función al dar click en las pestañas del producto eSim*/
+function openTab(evt, tabName, changeImage = false) {
+	let i, tabcontent, tablinks;
+    /*Oculta la información de todas las pestañas*/
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+    	tabcontent[i].style.display = "none";
+	}
+    /*Elimina la clase active a la pestaña preseleccionada*/
+    tablinks = document.getElementsByClassName("tabs")[0].getElementsByTagName("div");
+    if (!tablinks.length) {
+        tablinks = document.getElementsByClassName("tabs")[0].getElementsByTagName("a");
+    }
+	for (i = 0; i < tablinks.length; i++) {
+        if(tablinks[i].classList.contains('active')){
+            tablinks[i].classList.remove('active')
+        }
+	}
+    /*Agrega la clase active a la pestaña seleccionada*/
+	document.getElementById(tabName).style.display = "grid";
+    evt.currentTarget.className += "active";
+    if (changeImage) {
+        let images = document.querySelectorAll('.section-compatibles-image picture');
+        if (!images.length) images = document.querySelectorAll('.section-compatibles-image img');
+        images.forEach(image => {         
+            if (image.id.indexOf(tabName) === -1) {
+                image.classList.add('hidden')
+            } else {
+                image.classList.remove('hidden')
+            }
+        })
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    let buttonModals = document.querySelectorAll(".open-modal-button")
+    buttonModals.forEach(buttonModal => {
+        buttonModal.onclick = () => { openModal(buttonModal.attributes['data-topic'].value); };
+    })
+
+    let buttonCloseModals = document.querySelectorAll(".close-icon")   
+    buttonCloseModals.forEach(buttonCloseModal => {
+        buttonCloseModal.onclick = () => { closeModal(); };
+    })
+    
+
+    function openModal(infoName)  {
+        let modal = document.getElementById('product-modal-content');
+        let background = document.getElementById('product-modal-background');
+        let modalClosed = modal.classList.contains('hidden');
+        let information = document.getElementById(infoName);
+        if (modalClosed && information) {
+            modal.classList.remove('hidden');
+            background.classList.remove('hidden');
+            information.classList.remove('hidden');
+        }
+        document.getElementsByTagName('body')[0].style['overflow-y'] = 'hidden';
+        this.event.stopPropagation()
+        return false;
+    }
+
+    function closeModal(evt)  {
+        let modal = document.getElementById('product-modal-content');
+        let background = document.getElementById('product-modal-background');
+        let modalClosed = modal.classList.contains('hidden');
+        if (!modalClosed) {
+            document.getElementsByTagName('body')[0].style['overflow-y'] = 'scroll';            
+            modal.classList.add('hidden');
+            background.classList.add('hidden');
+            let information = document.querySelectorAll('.product-modal-content');
+            information.forEach(info => {
+                info.classList.add('hidden');
+            })        
+        }
+    }
+
+    document.addEventListener('click', function(event) {
+        let modal = document.getElementById('product-modal-content');
+        if (modal) {
+            let fueraModal = modal.contains(event.target);
+            let modalClosed = modal.classList.contains('hidden');
+            let background = document.getElementById('product-modal-background');
+            if (!modalClosed && !fueraModal) {
+                document.getElementsByTagName('body')[0].style['overflow-y'] = 'scroll';                
+                modal.classList.add('hidden');
+                background.classList.add('hidden');
+                let information = document.querySelectorAll('.product-modal-content');
+                information.forEach(info => {
+                    info.classList.add('hidden');
+                });     
+            }
+        }
+    });
+
+    const isProductPage = document.querySelectorAll('body.single-product');
+    const menuLinks = document.querySelectorAll('ul#menu-header li a');
+    if (isProductPage.length && menuLinks) {
+        menuLinks[1] && menuLinks[1].setAttribute('href', "#block-faqs-holafly");
+        menuLinks[2] && menuLinks[2].setAttribute('href', "#block-opiniones-producto");
+    }
+
+    const body = document.getElementsByTagName('body');
+    let isRTL = body.length && body[0].classList.contains('rtl');
+
+    if (document.getElementsByClassName('owl-carousel').length && isMobile) {
+        $('.owl-carousel ').owlCarousel({
+            rtl: isRTL,
+            loop:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                }
+            }
+        })
+    }
+
+    if (document.getElementsByClassName('reviews').length) {
+        $('.owl-carousel.reviews').owlCarousel({
+            rtl: isRTL,
+            loop:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                }
+            }
+        })
+    }
+
+});

@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} alerts\.unisimcard\.biz [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://alerts.unisimcard.biz/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} globalesim\.net [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://globalesim.net/$1 [R,L]

@@ -1,0 +1,1260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from coderthemes.com/flacto/layouts/red-vertical/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 Jul 2022 05:28:19 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title>Basic Tables | Flacto - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta content="Responsive bootstrap 4 admin template" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"  id="app-stylesheet" />
+         <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--<script src="assets/js/CustomDateComponent.js"></script>-->
+<script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script>var __basePath = './';</script>
+    <script src="https://unpkg.com/ag-grid-enterprise@28.0.0/dist/ag-grid-enterprise.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="assets/libs/multiselect/multi-select.css"  rel="stylesheet" type="text/css" />
+        <link href="assets/libs/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+        <link href="assets/libs/switchery/switchery.min.css" rel="stylesheet" />
+        <link href="assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+        <link href="assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet">
+        <link href="assets/libs/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet">
+        <link href="assets/libs/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-stylesheet" />
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css"  id="app-stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+
+    <style>
+   .ag-theme-balham {
+ 
+  --ag-checkbox-unchecked-color: #999;
+    --ag-checkbox-background-color:#fff;
+    --ag-checkbox-checked-color: #fff;
+    --ag-range-selection-border-color: #2196f3;
+}
+.ag-checked{
+    background-color:#fe6271 !important;
+    color:#fff !important;
+   
+}
+   
+.edit{
+       color: #4667cc !important;
+       padding-right:10px;
+       cursor:pointer !important;
+    }
+    .delete{
+        color: #fe6271 !important;
+        cursor:pointer !important;
+    }
+    .edit:hover{
+        color:#007bff;
+    }
+    .ag-ltr .ag-header-select-all {
+   
+    padding-left: 26px !important;
+}
+/*    .ag-theme-balham {*/
+/*  --ag-borders-input: dotted 2px;*/
+/*  --ag-input-border-color: orange;*/
+/*}*/
+.ag-theme-balham #ag-40-input {
+  background-color: rgb(255, 209, 123); /* light orange */
+  border : 2px dotted rgb(155, 101, 1) !important;
+}
+/*.ag-theme-balham .ag-cell:active{*/
+/*    border : 2px dashed rgb(193, 0, 97) !important;*/
+/*}*/
+/*.ag-theme-balham .ag-cell:focus{*/
+/*    border : 2px dashed rgb(193, 0, 97) !important;*/
+/*}*/
+.ag-theme-balham .ag-cell .ag-cell-range-selected .ag-cell-range-selected{
+    border : 2px dashed rgb(193, 0, 97) !important;
+}
+.ag-theme-balham #ag-40-input::placeholder {
+  color: rgb(155, 101, 1); /* darker orange */
+}
+    .ag-theme-balham {
+  --ag-column-select-indent-size: 40px;
+}
+
+.ag-theme-balham .ag-column-drop-cell {
+  background-color: purple;
+}
+
+.ag-theme-balham .ag-column-drop-cell .ag-icon {
+  color: white;
+}
+
+.ag-theme-balham .ag-column-drop-cell-text {
+  color: white;
+  font-weight: bold;
+}
+    .ag-theme-balham {
+ --ag-selected-row-background-color: rgb(0, 255, 0, 0.1);
+    --ag-range-selection-border-color: rgb(193, 0, 97) !important;
+  --ag-range-selection-border-style: dashed !important;
+ --ag-row-selected-border-color: #fce3f1 !important;
+ --ag-cell-selected-border-color: #fce3f1 !important;
+  --ag-range-selection-background-color: #fce3f1 !important;
+    /*--ag-input-focus-border-color: #fce3f1 !important;*/
+  -range-selection-background-color: rgb(255, 0, 128, 0.1);
+  --ag-range-selection-background-color-2: rgb(255, 0, 128, 0.19);
+  --ag-range-selection-background-color-3: rgb(255, 0, 128, 0.27);
+  --ag-range-selection-background-color-4: rgb(255, 0, 128, 0.34);
+  --ag-range-selection-highlight-color: rgb(60, 188, 0, 0.3);
+  --ag-range-selection-highlight-color: #fce3f1 !important;
+  --ag-row-hover-color:#d3eafd !important;;
+    --ag-column-hover-color:#d3eafd !important;;
+        --ag-balham-active-color: #fce3f1 !important;
+    --ag-selected-row-background-color: #fce3f1 !important;
+    /*     --ag-checkbox-background-color: #fce3f1;*/
+    /*--ag-checkbox-checked-color: #fe7582;*/
+   
+  /*--ag-checkbox-background-color: #f5f7f7;*/
+  /*--ag-checkbox-checked-color: #fe7582;*/
+  /*--ag-checkbox-unchecked-color: #f5f7f7;*/
+  /*--ag-checkbox-indeterminate-color: #fce3f1;*/
+
+
+  
+}
+/*.ag-theme-balham .ag-status-bar {*/
+/*    top:0 !important;*/
+/*    start:0 !important;*/
+/*    position:absolute !important;*/
+/*}*/
+    .customHeaderMenuButton {
+  float: left;
+  margin: 0 0 0 3px;
+}
+
+.customHeaderLabel {
+  float: left;
+  margin: 0 0 0 3px;
+}
+
+.customSortDownLabel {
+  float: left;
+  margin: 0 0 0 3px;
+}
+
+.customSortUpLabel {
+  float: left;
+  margin: 0;
+}
+
+.customSortRemoveLabel {
+  float: left;
+  margin: 0 0 0 3px;
+  font-size: 11px;
+}
+
+.active {
+  color: cornflowerblue;
+}
+    .ag-theme-balham .ag-column-hover{
+        background-color:#d3eafd !important;
+    }
+    .ag-theme-balham .ag-row-hover{
+        background-color:#d3eafd !important;
+    }
+    .custom-tooltip {
+  width: 150px;
+  height: 90px;
+  border: 1px solid cornflowerblue;
+  overflow: hidden;
+}
+
+.custom-tooltip p {
+  margin: 5px;
+  white-space: nowrap;
+}
+
+.custom-tooltip p:first-of-type {
+  font-weight: bold;
+}
+    .chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkslategray;
+  height: 410px;
+  overflow: hidden;
+}
+
+.chart-wrapper-top {
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.chart-wrapper-title {
+  font-weight: bold;
+}
+
+.chart-wrapper-body {
+  height: 100%;
+}
+    .example-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+.example-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*font-size: 13px;*/
+  /*margin-bottom: 5px;*/
+}
+   
+    .custom-date-filter a {
+  position: absolute;
+  right: 20px;
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+}
+.custom-date-filter:after {
+  position: absolute;
+  content: '\f073';
+  display: block;
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Free';
+  right: 5px;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.54);
+}
+    .ag-watermark{
+        display:none !important;
+    }
+/*      .ag-theme-alpine, .ag-theme-alpine-dark {*/
+        /*--ag-column-active-border-color:none !important;*/
+/*    --ag-alpine-active-color: #2196f3;*/
+/*    --ag-selected-row-background-color: rgba(33,150,243,0.3);*/
+    /*--ag-row-hover-color: none !important;*/
+    /*--ag-column-hover-color: none !important;*/
+/*    --ag-input-focus-border-color: rgba(33,150,243,0.4);*/
+/*    --ag-range-selection-background-color: rgba(33,150,243,0.2);*/
+/*    --ag-range-selection-background-color-2: rgba(33,150,243,0.36);*/
+/*    --ag-range-selection-background-color-3: rgba(33,150,243,0.49);*/
+/*    --ag-range-selection-background-color-4: rgba(33,150,243,0.59);*/
+/*    --ag-background-color: #fff;*/
+/*    --ag-foreground-color: #181d1f;*/
+    /*--ag-border-color: none !important;*/
+/*    --ag-secondary-border-color: #dde2eb;*/
+/*    --ag-header-background-color: #f8f8f8;*/
+/*    --ag-odd-row-background-color: #fcfcfc;*/
+/*    --ag-control-panel-background-color: #f8f8f8;*/
+/*    --ag-subheader-background-color: #fff;*/
+/*    --ag-invalid-color: #e02525;*/
+/*    --ag-checkbox-unchecked-color: #999;*/
+/*    --ag-checkbox-background-color: var(--ag-background-color);*/
+/*    --ag-checkbox-checked-color: var(--ag-alpine-active-color);*/
+/*    --ag-range-selection-border-color: var(--ag-alpine-active-color);*/
+/*    --ag-secondary-foreground-color: var(--ag-foreground-color);*/
+/*    --ag-input-border-color: var(--ag-border-color);*/
+/*    --ag-input-border-color-invalid: var(--ag-invalid-color);*/
+/*    --ag-input-focus-box-shadow: 0 0 2px 0.1remvar(--ag-input-focus-border-color);*/
+/*    --ag-disabled-foreground-color: rgba(24,29,31,0.5);*/
+/*    --ag-chip-background-color: rgba(24,29,31,0.07);*/
+/*    --ag-input-disabled-border-color: rgba(186,191,199,0.3);*/
+/*    --ag-input-disabled-background-color: rgba(186,191,199,0.15);*/
+/*    --ag-borders: solid 1px;*/
+/*    --ag-border-radius: 3px;*/
+/*    --ag-borders-side-button: none;*/
+/*    --ag-side-button-selected-background-color: transparent;*/
+/*    --ag-header-column-resize-handle-display: block;*/
+/*    --ag-header-column-resize-handle-width: 2px;*/
+/*    --ag-header-column-resize-handle-height: 30%;*/
+/*    --ag-grid-size: 6px;*/
+/*    --ag-icon-size: 16px;*/
+/*    --ag-row-height: calc(var(--ag-grid-size)*7);*/
+/*    --ag-header-height: calc(var(--ag-grid-size)*8);*/
+/*    --ag-list-item-height: calc(var(--ag-grid-size)*4);*/
+/*    --ag-column-select-indent-size: var(--ag-icon-size);*/
+/*    --ag-cell-horizontal-padding: calc(var(--ag-grid-size)*3);*/
+/*    --ag-cell-widget-spacing: calc(var(--ag-grid-size)*2);*/
+/*    --ag-widget-container-vertical-padding: calc(var(--ag-grid-size)*2);*/
+/*    --ag-widget-container-horizontal-padding: calc(var(--ag-grid-size)*2);*/
+/*    --ag-widget-vertical-spacing: calc(var(--ag-grid-size)*1.5);*/
+/*    --ag-toggle-button-height: 18px;*/
+/*    --ag-toggle-button-width: 28px;*/
+/*    --ag-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;*/
+/*    --ag-font-size: 13px;*/
+/*    --ag-icon-font-family: agGridAlpine;*/
+/*    --ag-selected-tab-underline-color: var(--ag-alpine-active-color);*/
+/*    --ag-selected-tab-underline-width: 2px;*/
+/*    --ag-selected-tab-underline-transition-speed: 0.3s;*/
+/*    --ag-tab-min-width: 240px;*/
+/*    --ag-card-shadow: 0 1px 4px 1pxrgba(186,191,199,0.4);*/
+/*    --ag-popup-shadow: var(--ag-card-shadow);*/
+/*    --ag-side-bar-panel-width: 250px;*/
+/*    --ag-row-active-curser:pointer;*/
+/*}*/
+.font{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.ag-theme-alpine-dark .ag-row, .ag-theme-alpine .ag-row {
+    
+    cursor: pointer !important;
+}
+.ag-theme-alpine, .ag-theme-alpine-dark{
+    
+}
+.ag-body-horizontal-scroll-viewport {
+    overflow-x: scroll !important;
+}
+.ag-cell, .ag-full-width-row .ag-cell-wrapper.ag-row-group {
+    border:none !important;
+   
+}
+.dropdown-toggle a{
+    text-decoration: none !important;
+}
+
+.ag-cell-value span:hover{
+  color: blue !important;
+  text-decoration: underline;
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        
+  overflow-y: hidden; /* Add vertical scrollbar */
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .headerticket{
+          
+        height: 80px !important;
+        background: #fff !important;
+        color: #000 !important;
+        
+
+      }
+      .ag-ltr .ag-cell{
+        border-right-width: 1px;
+      }
+      .ag-ltr .ag-cell.a:hover{
+        color: red;
+      }
+/*      .ag-header{*/
+/*          font-family: Arial, Helvetica, sans-serif;*/
+/*          border-top:1px solid #efefef !important ;*/
+/*          border-bottom: 2px solid #efefef !important;*/
+/*       background-color:#eaebef !important;*/
+       
+/*      }*/
+/*      .ag-header-cell-text{*/
+/*          font-family: Arial, Helvetica, sans-serif;*/
+/*        color:#000 !important;*/
+/*      }*/
+/*      .ag-theme-balham .ag-row-selected {*/
+/*background-color:#d3eafd !important;*/
+/*}*/
+
+/*.ag-theme-balham .ag-ltr  .ag-cell-focus {*/
+/* background-color:#d3eafd !important;*/
+/*}*/
+.ag-cell-text{
+  cursor: pointer;
+
+}
+/*.ag-cell-text:hover{*/
+/*  color: blue !important;*/
+/*  text-decoration: underline !important;*/
+/*  cursor: pointer !important;*/
+/*}*/
+      /*.ag-row-even{*/
+      /*    font-family: Arial, Helvetica, sans-serif;*/
+       /*border-top: 1px solid #efefef !important ;*/
+          /*border-bottom: 2px solid #efefef !important;*/
+      /*    background-color: transparent !important;*/
+      /*  color: #000 !important;*/
+      /*}*/
+      .ag-row-even:hover{
+         background-color:#d3eafd !important;
+      }
+       .ag-row-odd:hover{
+         background-color:#d3eafd !important;
+      }
+      /*.ag-row-odd{*/
+      /*    font-family: Arial, Helvetica, sans-serif;*/
+      /*  border-top: 1px solid #efefef !important ;*/
+      /*    border-bottom: 2px solid #efefef !important;*/
+      /*     background-color: transparent !important;*/
+      /*  color: #000 !important;*/
+      /*}*/
+    </style>
+
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <ul class="list-unstyled topnav-menu float-right mb-0">
+
+                    <li class="dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/flags/us.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">English <i class="mdi mdi-chevron-down"></i> </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">German</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Italian</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Spanish</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-2" height="12"> <span class="align-middle">Russian</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="mdi mdi-bell-outline noti-icon"></i>
+                            <div class="noti-dot">
+                                <span class="dot"></span>
+                                <span class="pulse"></span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="font-16 m-0">
+                                    <span class="float-right">
+                                        <a href="#" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Notification
+                                </h5>
+                            </div>
+
+                            <div class="slimscroll noti-scroll">
+                    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-soft-primary text-primary">
+                                        <i class="mdi mdi-comment-account-outline"></i>
+                                    </div>
+                                    <p class="notify-details">Caleb Flakelar commented on Admin
+                                        <small class="noti-time">1 min ago</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-soft-success text-success">
+                                        <i class="mdi mdi-account-plus"></i>
+                                    </div>
+                                    <p class="notify-details">New user registered.
+                                        <small class="noti-time">5 hours ago</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-soft-danger text-danger">
+                                        <i class="mdi mdi-comment-account-outline"></i>
+                                    </div>
+                                    <p class="notify-details">Herbert Lim commented on Admin
+                                        <small class="noti-time">13 days ago</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-soft-secondary text-muted">
+                                        <i class="mdi mdi-heart"></i>
+                                    </div>
+                                    <p class="notify-details">Carlos Crouch liked
+                                        <b>Admin</b>
+                                        <small class="noti-time">13 days ago</small>
+                                    </p>
+                                </a>
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-primary notify-item notify-all">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <i class="mdi mdi-email-outline noti-icon"></i>
+                            <span class="badge badge-danger rounded-circle noti-icon-badge">5</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+
+                            <!-- item-->
+                            <div class="dropdown-item noti-title">
+                                <h5 class="font-16 m-0">
+                                    <span class="float-right">
+                                        <a href="#" class="text-dark">
+                                            <small>Clear All</small>
+                                        </a>
+                                    </span>Messages
+                                </h5>
+                            </div>
+
+                            <div class="slimscroll noti-scroll">
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-1.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                    </div>
+                                    <p class="notify-details">James Smith</p>
+                                    <p class="mb-0 user-msg text-truncate">
+                                        <small>Hi, How are you? What about our next meeting</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-4.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                    </div>
+                                    <p class="notify-details">Paul Ocasio</p>
+                                    <p class="mb-0 user-msg text-truncate">
+                                        <small>Wow ! this admin looks good and awesome design</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-5.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                    </div>
+                                    <p class="notify-details">Thomas Davis</p>
+                                    <p class="mb-0 user-msg text-truncate">
+                                        <small>This theme is awesome!</small>
+                                    </p>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-6.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                    </div>
+                                    <p class="notify-details">Devon Laskey</p>
+                                    <p class="mb-0 user-msg text-truncate">
+                                        <small>Nice to meet you</small>
+                                    </p>
+                                </a>
+                    
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon">
+                                        <img src="assets/images/users/avatar-7.jpg" class="img-fluid rounded-circle" alt="" /> 
+                                    </div>
+                                    <p class="notify-details">Felipe Hall</p>
+                                    <p class="mb-0 user-msg text-truncate">
+                                        <small>I've finished it! See you so...</small>
+                                    </p>
+                                </a>
+
+                            </div>
+
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-primary notify-item notify-all">
+                                View all
+                                <i class="fi-arrow-right"></i>
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                            <!-- item-->
+                            <div class="dropdown-header noti-title">
+                                <h6 class="text-overflow m-0">Welcome !</h6>
+                            </div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-account-outline"></i>
+                                <span>Profile</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-settings-outline"></i>
+                                <span>Settings</span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-lock-outline"></i>
+                                <span>Lock Screen</span>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <i class="mdi mdi-logout-variant"></i>
+                                <span>Logout</span>
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect waves-light">
+                            <i class="mdi mdi-settings-outline noti-icon"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <!-- LOGO -->
+                <div class="logo-box">
+                    <a href="index.html" class="logo text-center">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-light.png" alt="" height="16">
+                            <!-- <span class="logo-lg-text-light">Flacto</span> -->
+                        </span>
+                        <span class="logo-sm">
+                            <!-- <span class="logo-sm-text-dark">F</span> -->
+                            <img src="assets/images/logo-sm.png" alt="" height="22">
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                    <li>
+                        <button class="button-menu-mobile waves-effect waves-light">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </li>
+        
+                    <li class="d-none d-sm-block">
+                        <form class="app-search">
+                            <div class="app-search-box">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+
+                    <li class="dropdown dropdown-mega d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                            Mega Menu
+                            <i class="mdi mdi-chevron-down"></i> 
+                        </a>
+                        <div class="dropdown-menu dropdown-megamenu">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo.png" alt="" height="16">
+                                    </a>
+                                    <h5 class="font-15 mt-3 mb-5">Bootstrap 4 Responsive admin Template</h5>
+
+                                    <h5 class="font-14 mt-0"><i class="mdi mdi-purse-outline mr-1"></i> UI Components</h5>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="list-unstyled megamenu-list">
+                                                <li><a href="javascript:void(0);">Buttons</a></li>
+                                                <li><a href="javascript:void(0);">Cards</a></li>
+                                                <li><a href="javascript:void(0);">Typography </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="list-unstyled megamenu-list">
+                                                <li><a href="javascript:void(0);">Checkboxs-Radios</a></li>
+                                                <li><a href="javascript:void(0);">Modals</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div>
+                                        <h5 class="font-16 mt-0">Components</h5>
+
+                                        <div class="text-center">
+                                            <div class="row border-bottom">
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3 border-right">
+                                                            <i class="mdi mdi-shape-outline font-22"></i>
+        
+                                                            <h5 class="font-14">Widgets</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                    
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3 border-right">
+                                                            <i class="mdi mdi-clipboard-text-outline font-22"></i>
+        
+                                                            <h5 class="font-14">Forms</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3">
+                                                            <i class="mdi mdi-dns-outline font-22"></i>
+        
+                                                            <h5 class="font-14">Tables</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3 border-right">
+                                                            <i class="mdi mdi-chart-arc font-22"></i>
+        
+                                                            <h5 class="font-14">Charts</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3 border-right">
+                                                            <i class="mdi mdi-map-marker-outline font-22"></i>
+        
+                                                            <h5 class="font-14">Maps</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-4 p-0">
+                                                    <a href="#">
+                                                        <div class="p-3">
+                                                            <i class="mdi mdi-speedometer font-22"></i>
+        
+                                                            <h5 class="font-14">Dashboard</h5>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                            
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-2 offset-lg-1">
+                                    <div class="p-2">
+                                        <div class="media mb-3">
+                                            <div class="mr-3">
+                                                <i class="fab fa-bootstrap text-primary font-22"></i>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h5 class="font-14 mt-1">Bootstrap v4.3.1</h5>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-3">
+                                            <div class="mr-3">
+                                                <i class="fab fa-npm text-primary font-22"></i>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h5 class="font-14 mt-1">Npm</h5>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-3">
+                                            <div class="mr-3">
+                                                <i class="fab fa-sass text-primary font-22"></i>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h5 class="font-14 mt-1">Sass support</h5>
+                                            </div>
+                                        </div>
+                                        <div class="media mb-3">
+                                            <div class="mr-3">
+                                                <i class="fas fa-tablet-alt text-primary font-22"></i>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h5 class="font-14 mt-1">Responsive</h5>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="fas fa-exchange-alt text-primary font-22"></i>
+                                            </div>
+
+                                            <div class="media-body">
+                                                <h5 class="font-14 mt-1">RTL supported</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+              
+                                <div class="col-sm-3">
+                                    <div class="text-center">
+                                        <h5 class="mt-0">Special Discount Sale!</h5>
+
+                                        <h5 class="font-16 mt-4">Save up to <span class="text-primary">60%</span> off.</h5>
+                                        <p class="text-muted">Get free updates lifetime</p>
+                                        <a href="#" class="btn btn-primary btn-rounded">Download Now</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Topbar -->
+
+            
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="slimscroll-menu">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+
+                        <ul class="metismenu" id="side-menu">
+
+                            <li class="menu-title">Navigation</li>
+
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-speedometer"></i>
+                                    <span> Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-purse-outline"></i>
+                                    <span> User Interface </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-cards.html">Cards</a></li>
+                                    <li><a href="ui-typography.html">Typography </a></li>
+                                    <li><a href="ui-checkbox-radio.html">Checkboxs-Radios</a></li>
+                                    <li>
+                                        <a href="javascript: void(0);" aria-expanded="false">Icons
+                                            <span class="badge badge-primary badge-pill float-right">3</span>
+                                        </a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                            <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                            <li><a href="icons-themify.html">Themify Icons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="ui-images.html">Images</a></li>
+                                    <li><a href="ui-components.html">Components</a>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-package-variant-closed"></i>
+                                    <span> Admin UI </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="admin-masonry.html">Masonry</a></li>
+                                    <li><a href="admin-notification.html">Notification</a></li>
+                                    <li><a href="admin-range-slider.html">Range Slider</a></li>
+                                    <li><a href="admin-sweetalert.html">Sweet Alert</a>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="widgets.html" class="waves-effect">
+                                    <i class="mdi mdi-shape-outline"></i>
+                                    <span> Widgets </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-clipboard-text-outline"></i>
+                                    <span> Forms </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="form-elements.html">Form Elements</a></li>
+                                    <li><a href="form-advanced.html">Advanced Form</a></li>
+                                    <li><a href="form-validation.html">Form Validation</a></li>
+                                    <li><a href="form-wizard.html">Form Wizard</a></li>
+                                    <li><a href="form-summernote.html">Summernote</a></li>
+                                    <li><a href="form-uploads.html">Form Uploads</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-dns-outline"></i>
+                                    <span> Tables </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="tables-basic.html">Basic Tables</a></li>
+                                    <li><a href="tables-datatable.html">Data Tables</a></li>
+                                    <li><a href="tables-editable.html">Editable Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-chart-arc"></i>
+                                    <span> Charts </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="charts-flot.html">Flot Charts</a></li>
+                                    <li><a href="charts-morris.html">Morris Charts</a></li>
+                                    <li><a href="charts-chartist.html">Chartist Charts</a></li>
+                                    <li><a href="charts-other.html">Other Charts</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-map-marker-outline"></i>
+                                    <span> Maps </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="maps-google.html">Google Maps</a></li>
+                                    <li><a href="maps-vector.html">Vector Maps</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-title mt-2">More</li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-flip-horizontal"></i>
+                                    <span> Layouts </span>
+                                    <span class="badge badge-danger badge-pill float-right">New</span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="layouts-horizontal.html">Horizontal</a></li>
+                                    <li><a href="layouts-dark-sidebar.html">Dark Sidebar</a></li>
+                                    <li><a href="layouts-small-sidebar.html">Small Sidebar</a></li>
+                                    <li><a href="layouts-sidebar-collapsed.html">Sidebar Collapsed</a></li>
+                                    <li><a href="layouts-unsticky.html">Unsticky Layout</a></li>
+                                    <li><a href="layouts-boxed.html">Boxed Layout</a></li>
+                                </ul>
+                            </li>
+                
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-cards-outline"></i>
+                                    <span> Pages </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li><a href="pages-starter.html">Starter Page</a></li>
+                                    <li><a href="pages-timeline.html">Timeline</a></li>
+                                    <li><a href="pages-login.html">Login</a></li>
+                                    <li><a href="pages-register.html">Register</a></li>
+                                    <li><a href="pages-recoverpw.html">Recover Password</a></li>
+                                    <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                                    <li><a href="pages-confirm-mail.html">Confirm Mail</a></li>
+                                    <li><a href="pages-404.html">Error 404</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="mdi mdi-alarm-plus"></i>
+                                    <span> Multi Level </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level nav" aria-expanded="false">
+                                    <li>
+                                        <a href="javascript: void(0);">Level 1.1</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript: void(0);" aria-expanded="false">Level 1.2
+                                            <span class="menu-arrow"></span>
+                                        </a>
+                                        <ul class="nav-third-level nav" aria-expanded="false">
+                                            <li>
+                                                <a href="javascript: void(0);">Level 2.1</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript: void(0);">Level 2.2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+                        <div class ="col-12">
+    <div class ="space" style="height:15px;"></div>
+</div>
+                        
+ <div class="row">
+                            <div class="col-12">
+                         <div class="card" style="height:720px !important; width: 100% !important;">
+                             <div class="card-body">
+                              <div class="row"><div class="col-8 float-left d-flex"><h4 class="page-title mt-1 font" >Basic Tables</h4>
+                                                                                      <div class="form-group row ml-4">
+                                                            
+                                                            <div class="col-lg-12 font" style="width:410px;">
+                                                                <div id="reportrange" class="float-right form-control">
+                                                                    <i class="far fa-calendar mr-2"></i>
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+                             
+                              </div>
+                              <div class="col-4  ">
+                                  <div class="float-right d-flex">
+                                       <input type="text" class="mr-3 form-control font" id="filter-text-box" placeholder="Quick Search..." oninput="onFilterTextBoxChanged()">
+                                      <div class="mr-3 mt-1" style="cursor:pointer;" onclick="onBtExport()"><img src="assets/images/excel-app.svg" alt="" height="24"></div>
+                                   <div class="mr-3 mt-1" style="cursor:pointer;"><img src="assets/images/file.svg" alt="" height="24"></div>
+                                    <div class="mr-1 mt-1" style="cursor:pointer;"><img src="assets/images/mail.svg" alt="" height="24"></div>
+                                  </div>
+                                  
+                                  </div></div>  
+                             
+                                    
+                                 
+			 <div id="myGrid" class="font ag-theme-balham" style="height:570px !important;" >
+			
+			</div>
+                           </div>
+                                
+                                 </div>
+                             
+      </div></div></div>
+
+                        
+                    </div> <!-- end container-fluid -->
+
+                </div> <!-- end content -->
+
+                
+
+              
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="rightbar-title">
+                <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                    <i class="mdi mdi-close"></i>
+                </a>
+                <h4 class="font-17 m-0 text-white">Theme Customizer</h4>
+            </div>
+            <div class="slimscroll-menu">
+        
+                <div class="p-4">
+                    <div class="alert alert-warning" role="alert">
+                        <strong>Customize </strong> the overall color scheme, layout, etc.
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/light.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="light-mode-switch" checked />
+                        <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+            
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/dark.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-3">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" 
+                            data-appStyle="assets/css/app-dark.min.css" />
+                        <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+            
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/rtl.png" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="custom-control custom-switch mb-5">
+                        <input type="checkbox" class="custom-control-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css" />
+                        <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+                    <a href="https://wrapbootstrap.com/theme/flacto-flat-admin-dashboard-WB0C3DCHM?ref=coderthemes" class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-download mr-1"></i> Download Now</a>
+                </div>
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <!--<div class="rightbar-overlay"></div>-->
+
+        <!--<a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">-->
+        <!--    <i class="mdi mdi-settings-outline mdi-spin"></i> &nbsp;Choose Demos-->
+        <!--</a>-->
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- Plugins Js -->
+        <script src="assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/libs/switchery/switchery.min.js"></script>
+        <script src="assets/libs/multiselect/jquery.multi-select.js"></script>
+        <script src="assets/libs/jquery-quicksearch/jquery.quicksearch.min.js"></script>
+
+        <script src="assets/libs/select2/select2.min.js"></script>
+        <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+        <script src="assets/libs/jquery-mask-plugin/jquery.mask.min.js"></script>
+        <script src="assets/libs/moment/moment.min.js"></script>
+        <script src="assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+        <script src="assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+        <script src="assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <script src="assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+        <script src="assets/js/app.min.js"></script>
+    </body>
+</html>
